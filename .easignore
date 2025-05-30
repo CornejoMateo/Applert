@@ -1,0 +1,7 @@
+.git
+node_modules
+build/
+ios/
+*.log
+docs/
+large_unused_image.png
