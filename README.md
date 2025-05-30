@@ -1,61 +1,74 @@
-# AppAlert (Municipalidad App)
+# Applert
 
-AppAlert is a mobile application built with React Native and Expo, designed to streamline communication between citizens and municipal emergency services like the Police, Fire Department, and Civil Defense. Users can register, log in, submit incident notifications, and authorized personnel can view, respond to, and manage the status of these reports.
+Applert es una aplicación móvil desarrollada con **React Native** y **Expo**, diseñada para optimizar la comunicación entre los ciudadanos y los servicios de emergencia municipales como la Policía, Bomberos y Defensa Civil. Los usuarios pueden registrarse, iniciar sesión, enviar notificaciones de incidentes, y el personal autorizado puede verlas, responderlas y gestionar su estado. Además, los usuarios también pueden enviar **alertas de pánico** a los servicios de emergencia municipales.
 
-## Features
+## Características
 
-* 🔐 **User Authentication:** Secure login and registration using email/password or username. Includes email verification and password recovery.
-* 👥 **Role-Based Access:** Differentiated views and permissions for regular Citizens versus authorized Responders (e.g., Police, Firefighters, Civil Defense).
-* 🚨 **Notification Submission:** Allows users to create new incident reports, selecting the appropriate category (Police, Fire, Civil Defense), adding a title, and a detailed description.
-* 📊 **Dashboard (`Home` Screen):** Provides quick access to emergency service categories and displays a list of recent notifications.
-* 📄 **Alert Details:** Shows the complete information for a specific notification, including description, metadata, and responses.
-* 💬 **Response System:** Enables authorized Responders to add comments or updates to specific notifications.
-* ✅ **Status Management:** Allows authorized Responders to change the status of a notification (e.g., Pending, In Progress, Resolved).
-* 👤 **User Profiles:** Users can view their email and manage their profile picture.
+* 🔐 **Autenticación de usuarios:** Inicio de sesión y registro seguros utilizando correo electrónico/contraseña o nombre de usuario. Incluye verificación por correo y recuperación de contraseña.
 
-## Tech Stack
+* 👥 **Acceso basado en roles:** Vistas y permisos diferenciados para ciudadanos comunes y servicios autorizados (por ejemplo, Policía, Bomberos, Defensa Civil).
 
-* **React Native**
-* **Expo**
-* **JavaScript**
-* **Firebase**
-    * Authentication (Email/Password, Email Verification)
-    * Firestore (NoSQL Database for users, notifications, responses)
-    * Storage (Planned for file attachments)
-* **React Navigation** (`@react-navigation/native`, `@react-navigation/stack`)
-* **React Context API** (for Auth/User state management)
-* **@react-native-picker/picker** (for category selection)
-* **expo-image-picker** (for profile picture selection)
-* **@react-native-async-storage/async-storage** (for storing profile picture URI)
-* **@expo/vector-icons** (specifically Ionicons)
+* 🚨 **Envío de notificaciones:** Permite a los usuarios crear reportes de incidentes, eligiendo la categoría correspondiente (Policía, Bomberos, Defensa Civil), añadiendo un título, una descripción detallada y una imagen (opcional).
 
-## Installation
+* 📊 **Panel principal (pantalla de inicio):** Proporciona acceso rápido a las categorías de servicios de emergencia y muestra una lista de notificaciones recientes. Ademas, es posible enviar alertas de panico a los servicios de emergencia, cuya alerta va a contener la ubicacion del ciudadano correspondiente.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/juanbrusatti/municipalidad-app]
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd Municipalidad-App
-    ```
-3.  **Install dependencies:**
-    ```bash
-    npm install
-    # or if you use yarn:
-    # yarn install
-    ```
-4.  **Firebase Setup:**
-    * You will need a Firebase project with Authentication (Email/Password enabled), Firestore Database, and potentially Storage enabled.
+* 📄 **Detalles de la alerta:** Muestra toda la información de una notificación específica, incluyendo descripción, metadatos y respuestas.
 
-5.  **Run the application:**
-    ```bash
-    npx expo start
-    ```
-    Then, scan the QR code with the Expo Go app on your device or run on an emulator/simulator.
+* 💬 **Sistema de respuestas:** Permite a las entidades agregar comentarios o actualizaciones a notificaciones específicas.
 
-## Contributing
+* ✅ **Gestión de estado:** Permite a las entidades cambiar el estado de una notificación (por ejemplo, Pendiente, Resuelta).
 
-Contributions are welcome! Please feel free to submit pull requests or open issues if you find bugs or have suggestions for improvements.
+## Tecnologías utilizadas
 
-## License
+* React Native
+* Expo
+* JavaScript
+* Firebase
+
+  * Autenticación (correo/contraseña, verificación por email)
+  * Firestore (base de datos NoSQL para usuarios, notificaciones y respuestas)
+  * Storage (planeado para adjuntar archivos)
+* React Navigation (`@react-navigation/native`, `@react-navigation/stack`)
+* React Context API (para gestión del estado de autenticación/usuario)
+* `@react-native-picker/picker` (para seleccionar la categoría)
+* `expo-image-picker` (para selección de foto de perfil)
+* `@react-native-async-storage/async-storage` (para guardar el URI de la imagen de perfil)
+* `@expo/vector-icons` (específicamente Ionicons)
+
+## Instalación
+
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://github.com/juanbrusatti/municipalidad-app
+   ```
+
+2. **Navegar al directorio del proyecto:**
+
+   ```bash
+   cd Municipalidad-App
+   ```
+
+3. **Instalar dependencias:**
+
+   ```bash
+   npm install
+   # o, si usás yarn:
+   # yarn install
+   ```
+
+4. **Configuración de Firebase:**
+
+   * Necesitás un proyecto en Firebase con:
+
+     * Autenticación habilitada (Email/Password)
+     * Firestore habilitado
+     * (Opcional) Storage habilitado
+
+5. **Ejecutar la aplicación:**
+
+   ```bash
+   npx expo start
+   ```
+
+   Luego, escaneá el código QR con la app **Expo Go** en tu dispositivo o ejecutala en un emulador/simulador.
