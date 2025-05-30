@@ -1,0 +1,33 @@
+# ⚙️ Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 📦 Build
+dist/
+build/
+
+# ⚙️ Vite / CRA cache
+.vite/
+.cache/
+.temp/
+
+# 🧪 Test coverage
+coverage/
+
+# 🔒 Environment variables
+.env
+.env.local
+.env.*.local
+
+# 📂 Firebase cache/deploy stuff
+.firebase/
+.firebaserc
+
+# 💻 System files
+.DS_Store
+Thumbs.db
+
+/ios
+/android
