@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622788432278",
+    "project_id": "loginmuni-9780c",
+    "storage_bucket": "loginmuni-9780c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622788432278:android:75cff60ba1cfacbc03cdb7",
+        "android_client_info": {
+          "package_name": "com.mateo.juancho.appalert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6iIs5RZ2j0VBNYOQnBCXoDbWL2IUsQo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
